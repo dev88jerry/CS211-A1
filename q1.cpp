@@ -8,6 +8,7 @@ Program takes inputs from the keyboard by the user to output according calculati
 
 #include <iostream>
 #include <string>
+#include <iomanip>
 
 using namespace std;
 
@@ -50,16 +51,16 @@ int main(){
 	cout << "Hours worked: " << hWork << endl;
 	cout << "Hourly rate: " << hRate << endl;
 	
-	cout <<endl << "Gross Pay: " << gPay << endl;
+	cout <<fixed<<setprecision(2)<<endl << "Gross Pay: " << gPay << endl;
 	
-	cout << endl << "Deductions:" << endl;
-	cout << "\tUnion dues " << unionD << endl;
-	cout << "\tEmployment insurance " << empInsD << endl;	
-	cout << "\tTaxes " << taxD << endl;
+	cout <<fixed<<setprecision(2)<< endl << "Deductions:" << endl;
+	cout <<fixed<<setprecision(2)<< "\tUnion dues " << unionD << endl;
+	cout <<fixed<<setprecision(2)<< "\tEmployment insurance " << empInsD << endl;	
+	cout <<fixed<<setprecision(2)<< "\tTaxes " << taxD << endl;
 	
-	cout <<endl << "Total Deductions: " << tDeductions << endl;
+	cout <<fixed<<setprecision(2)<<endl << "Total Deductions: " << tDeductions << endl;
 	
-	cout <<endl << "Net Pay: " << nPay << endl;
+	cout <<fixed<<setprecision(2)<<endl << "Net Pay: " << nPay << endl;
     
     return 0;
 }
