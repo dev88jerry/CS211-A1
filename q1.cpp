@@ -1,7 +1,6 @@
 /**
 CS211 Assignment 1 Question 1
-Jerry Lau
-002310931
+
 Oct 11 2021
 
 Program takes inputs from the keyboard by the user to output according calculations
